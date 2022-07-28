@@ -1,0 +1,689 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>122/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Jun 10 17:38:51 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>494 seconds (494145 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG1.createUser()'><b>createUser</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG1<br>Parameters: demo, User1, demouser1@gmail.com, demouser1, welcome123, welcome123</td>
+<td></td>
+<td>8</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG1@74751b3</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG2.logout5()'><b>logout5</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG2</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG2@52af26ee</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG1.closeApplication()'><b>closeApplication</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG1</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG1@bae7dc0</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG6.navigate()'><b>navigate</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG6</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG6@4f2b503c</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG5.navigate()'><b>navigate</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG5</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG5@209da20d</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG7.deleteProject()'><b>deleteProject</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG7</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG7@741a8937</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG2.logout7()'><b>logout7</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG2</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG2@52af26ee</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG2.closeApplication()'><b>closeApplication</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG2</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG2@52af26ee</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG1.createUser()'><b>createUser</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG1</td>
+<td></td>
+<td>14</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG1@bae7dc0</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG2.modifyUser()'><b>modifyUser</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG2<br>Parameters: demouser1, demouser1</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG2@35aea049</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG6.deleteProject()'><b>deleteProject</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG6</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG6@4f2b503c</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG2.logout1()'><b>logout1</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG2</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG2@52af26ee</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG2.modifyPasswordforUser3()'><b>modifyPasswordforUser3</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG2</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG2@52af26ee</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG7.navigate()'><b>navigate</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG7</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG7@741a8937</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG4.createCustomer()'><b>createCustomer</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG4<br>Parameters: TestUser1</td>
+<td></td>
+<td>7</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG4@306e95ec</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG2.logout8()'><b>logout8</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG2</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG2@52af26ee</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG2.loginasuser2()'><b>loginasuser2</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG2</td>
+<td></td>
+<td>8</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG2@52af26ee</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG6.modifyProject()'><b>modifyProject</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG6<br>Parameters: Modify Project</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG6@4f2b503c</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG2.loginAsUser1b()'><b>loginAsUser1b</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG2</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG2@52af26ee</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG1.logout8()'><b>logout8</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG1</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG1@bae7dc0</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG2.deleteUser3()'><b>deleteUser3</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG2</td>
+<td></td>
+<td>8</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG2@52af26ee</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG7.deleteCustomer()'><b>deleteCustomer</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG7</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG7@741a8937</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG2.logout11()'><b>logout11</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG2</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG2@52af26ee</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG4.logout()'><b>logout</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG4</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG4@306e95ec</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG5.launchBrowser()'><b>launchBrowser</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG5</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG5@209da20d</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG2.navigate()'><b>navigate</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG2</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG2@35aea049</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG2.createUser()'><b>createUser</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG2<br>Parameters: demo, User1, demouser1@gmail.com, demouser1, welcome123, welcome123</td>
+<td></td>
+<td>6</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG2@35aea049</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG3.createCustomer()'><b>createCustomer</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG3<br>Parameters: TestUser</td>
+<td></td>
+<td>7</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG3@6fd83fc1</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG5.createCustomer()'><b>createCustomer</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG5<br>Parameters: TestUser1</td>
+<td></td>
+<td>7</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG5@209da20d</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG2.closeApplication()'><b>closeApplication</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG2</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG2@35aea049</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG7.createProject()'><b>createProject</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG7<br>Parameters: project1</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG7@741a8937</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG2.loginasuser1()'><b>loginasuser1</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG2</td>
+<td></td>
+<td>8</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG2@52af26ee</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG2.deleteUser1()'><b>deleteUser1</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG2</td>
+<td></td>
+<td>8</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG2@52af26ee</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG1.loginasuser1()'><b>loginasuser1</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG1</td>
+<td></td>
+<td>6</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG1@bae7dc0</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG1.navigate()'><b>navigate</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG1</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG1@74751b3</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG2.logout9()'><b>logout9</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG2</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG2@52af26ee</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG1.login()'><b>login</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG1<br>Parameters: admin, manager</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG1@74751b3</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG6.deleteCustomer()'><b>deleteCustomer</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG6</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG6@4f2b503c</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG1.loginasUser1()'><b>loginasUser1</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG1</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG1@bae7dc0</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG1.launchBrowser()'><b>launchBrowser</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG1</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG1@74751b3</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG1.logout4()'><b>logout4</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG1</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG1@bae7dc0</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG7.logout()'><b>logout</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG7</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG7@741a8937</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG3.launchBrowser()'><b>launchBrowser</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG3</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG3@6fd83fc1</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG1.loginasuser3()'><b>loginasuser3</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG1</td>
+<td></td>
+<td>6</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG1@bae7dc0</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG3.navigate()'><b>navigate</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG3</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG3@6fd83fc1</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG7.login()'><b>login</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG7<br>Parameters: admin, manager</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG7@741a8937</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG6.login()'><b>login</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG6<br>Parameters: admin, manager</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG6@4f2b503c</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG2.modifyPasswordforUser2()'><b>modifyPasswordforUser2</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG2</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG2@52af26ee</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG2.loginasAdmin1a()'><b>loginasAdmin1a</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG2</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG2@52af26ee</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG1.loginasUser3()'><b>loginasUser3</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG1</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG1@bae7dc0</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG2.logout12()'><b>logout12</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG2</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG2@52af26ee</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG7.createTask()'><b>createTask</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG7<br>Parameters: demotask</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG7@741a8937</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG2.loginAsUser2b()'><b>loginAsUser2b</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG2</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG2@52af26ee</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG1.logout7()'><b>logout7</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG1</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG1@bae7dc0</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG2.deleteUser()'><b>deleteUser</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG2</td>
+<td></td>
+<td>6</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG2@35aea049</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG6.createProject()'><b>createProject</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG6<br>Parameters: project1</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG6@4f2b503c</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG2.createUser3()'><b>createUser3</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG2</td>
+<td></td>
+<td>7</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG2@52af26ee</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG1.deleteUser()'><b>deleteUser</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG1</td>
+<td></td>
+<td>6</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG1@74751b3</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG4.login()'><b>login</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG4<br>Parameters: admin, manager</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG4@306e95ec</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG4.deleteCustomer()'><b>deleteCustomer</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG4</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG4@306e95ec</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG1.loginasAdmin3()'><b>loginasAdmin3</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG1</td>
+<td></td>
+<td>6</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG1@bae7dc0</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG1.logout6()'><b>logout6</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG1</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG1@bae7dc0</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG2.navigate()'><b>navigate</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG2</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG2@52af26ee</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG2.loginAsUser1a()'><b>loginAsUser1a</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG2</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG2@52af26ee</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG2.deleteUser2()'><b>deleteUser2</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG2</td>
+<td></td>
+<td>8</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG2@52af26ee</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG4.navigate()'><b>navigate</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG4</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG4@306e95ec</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG2.logout()'><b>logout</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG2</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG2@35aea049</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG2.loginAsUser2a()'><b>loginAsUser2a</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG2</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG2@52af26ee</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG1.launchBrowser()'><b>launchBrowser</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG1</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG1@bae7dc0</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG1.logout3()'><b>logout3</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG1</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG1@bae7dc0</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG4.modifyCustomer()'><b>modifyCustomer</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG4<br>Parameters: Modify Customer</td>
+<td></td>
+<td>9</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG4@306e95ec</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG7.closeApplication()'><b>closeApplication</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG7</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG7@741a8937</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG1.logout1()'><b>logout1</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG1</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG1@bae7dc0</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG2.createUser2()'><b>createUser2</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG2</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG2@52af26ee</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG2.loginasAdmin1b()'><b>loginasAdmin1b</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG2</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG2@52af26ee</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG2.loginasAdmin1c()'><b>loginasAdmin1c</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG2</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG2@52af26ee</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG2.logout4()'><b>logout4</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG2</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG2@52af26ee</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG1.logout2()'><b>logout2</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG1</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG1@bae7dc0</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG2.loginasUser3()'><b>loginasUser3</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG2</td>
+<td></td>
+<td>10</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG2@52af26ee</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG2.logout10()'><b>logout10</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG2</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG2@52af26ee</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG3.logout()'><b>logout</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG3</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG3@6fd83fc1</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG2.loginAsUser3()'><b>loginAsUser3</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG2</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG2@52af26ee</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG1.loginasUser2()'><b>loginasUser2</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG1</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG1@bae7dc0</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG2.launchBrowser()'><b>launchBrowser</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG2</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG2@52af26ee</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG2.modifyPasswordforUser1()'><b>modifyPasswordforUser1</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG2</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG2@52af26ee</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG4.launchBrowser()'><b>launchBrowser</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG4</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG4@306e95ec</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG2.logout2()'><b>logout2</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG2</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG2@52af26ee</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG1.navigate()'><b>navigate</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG1</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG1@bae7dc0</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG7.createCustomer()'><b>createCustomer</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG7<br>Parameters: TestUser1</td>
+<td></td>
+<td>7</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG7@741a8937</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG2.logout6()'><b>logout6</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG2</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG2@52af26ee</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG2.logout3()'><b>logout3</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG2</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG2@52af26ee</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG2.loginasUser2()'><b>loginasUser2</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG2</td>
+<td></td>
+<td>10</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG2@52af26ee</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG1.loginasAdmin1()'><b>loginasAdmin1</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG1</td>
+<td></td>
+<td>6</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG1@bae7dc0</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG6.launchBrowser()'><b>launchBrowser</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG6</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG6@4f2b503c</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG5.createProject()'><b>createProject</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG5<br>Parameters: project1</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG5@209da20d</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG5.closeApplication()'><b>closeApplication</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG5</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG5@209da20d</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG1.closeApplication()'><b>closeApplication</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG1</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG1@74751b3</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG7.launchBrowser()'><b>launchBrowser</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG7</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG7@741a8937</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG6.closeApplication()'><b>closeApplication</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG6</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG6@4f2b503c</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG2.createUser1()'><b>createUser1</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG2</td>
+<td></td>
+<td>6</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG2@52af26ee</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG1.loginasAdmin2()'><b>loginasAdmin2</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG1</td>
+<td></td>
+<td>6</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG1@bae7dc0</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG7.deleteTask()'><b>deleteTask</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG7</td>
+<td></td>
+<td>3</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG7@741a8937</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG2.login()'><b>login</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG2<br>Parameters: admin, manager</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG2@35aea049</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG1.loginasuser2()'><b>loginasuser2</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG1</td>
+<td></td>
+<td>6</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG1@bae7dc0</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG6.createCustomer()'><b>createCustomer</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG6<br>Parameters: TestUser1</td>
+<td></td>
+<td>7</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG6@4f2b503c</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG5.login()'><b>login</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG5<br>Parameters: admin, manager</td>
+<td></td>
+<td>3</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG5@209da20d</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG4.closeApplication()'><b>closeApplication</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG4</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG4@306e95ec</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG3.login()'><b>login</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG3<br>Parameters: admin, manager</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG3@6fd83fc1</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG3.closeApplication()'><b>closeApplication</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG3</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG3@6fd83fc1</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG6.logout()'><b>logout</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG6</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG6@4f2b503c</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG5.logout()'><b>logout</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG5</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG5@209da20d</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG1.logout5()'><b>logout5</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG1</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG1@bae7dc0</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG2.loginasUser1()'><b>loginasUser1</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG2</td>
+<td></td>
+<td>10</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG2@52af26ee</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG1.modifyPasswords()'><b>modifyPasswords</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG1</td>
+<td></td>
+<td>20</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG1@bae7dc0</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG1.logout()'><b>logout</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG1</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG1@74751b3</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG1.logout9()'><b>logout9</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG1</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG1@bae7dc0</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG3.deleteCustomer()'><b>deleteCustomer</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG3</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG3@6fd83fc1</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG2.logout13()'><b>logout13</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG2</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG2@52af26ee</td></tr>
+<tr>
+<td title='com.sgtesting.advancescenario.AdvAssigTNG1.deleteUsers()'><b>deleteUsers</b><br>Test class: com.sgtesting.advancescenario.AdvAssigTNG1</td>
+<td></td>
+<td>21</td>
+<td>com.sgtesting.advancescenario.AdvAssigTNG1@bae7dc0</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG5.deleteCustomer()'><b>deleteCustomer</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG5</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG5@209da20d</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG2.launchBrowser()'><b>launchBrowser</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG2</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG2@35aea049</td></tr>
+<tr>
+<td title='com.sgtesting.basicscenario.BasicAssigTNG5.deleteProject()'><b>deleteProject</b><br>Test class: com.sgtesting.basicscenario.BasicAssigTNG5</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.basicscenario.BasicAssigTNG5@209da20d</td></tr>
+</table><p>
+</body>
+</html>
